@@ -1,0 +1,19 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "An Example Implementation of Authentication Server using NodeJs, Express, MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamcode99/nodejs-auth-server-example.git"
+  },
+  "author": "kamcode99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamcode99/nodejs-auth-server-example/issues"
+  },
+  "homepage": "https://github.com/kamcode99/nodejs-auth-server-example#readme"
+}
