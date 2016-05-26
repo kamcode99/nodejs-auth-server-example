@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/kamcode99/nodejs-auth-server-example/issues"
   },
-  "homepage": "https://github.com/kamcode99/nodejs-auth-server-example#readme"
+  "homepage": "https://github.com/kamcode99/nodejs-auth-server-example#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4"
+  }
 }
