@@ -1,16 +1,20 @@
-var http = require('http');
-var server = http.createServer(function(request, response){
-  console.log("Request Received");
-  response.write("Hello there!");
-  response.end();
-});
+//**** Main Starting point of the application ****
+// http is the native node library
+const http = require('http');
+const express = require('express');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
 
-server.listen(8080);
+const app = express();
 
-// Simplest node server using http module
-// listening on port 8080
-// Run the application using 'node .' commmand
-// Goto the browser and access the following url
-// localhost:8080
-// You will see console log 'Request Received'
-// And in the browser you will see 'Hello World!'
+//**** Application Setup ****
+
+
+
+//**** Server Setup ****
+// If there is an environment variable named PORT
+// use that, otherwise use port 8080
+const port = process.env.PORT || 8080
+const server = http.createServer(app);
+server.listen(port);
+console.log('Server listening on:', port);
