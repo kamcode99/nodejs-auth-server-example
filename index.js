@@ -10,6 +10,8 @@ const bodyParser = require('body-parser');
 // Morgan is a logging framework and a middleware
 // Which is basically used for debugging.
 const morgan = require('morgan');
+
+// Create an express Application
 const app = express();
 
 //**** Application Setup ****
@@ -18,12 +20,9 @@ const app = express();
 // and also to bodyParser.'app.use' is used to register
 // morgan and bodyParser as middleware.
 app.use(morgan('combined'));
-irrespective
 // 'type: */*' says that parse every incomming request
 // into json irrespectiveof the request type.
 app.use(bodyParser.json({type: '*/*'}));
-
-
 //**** Server Setup ****
 // If there is an environment variable named PORT
 // use that, otherwise use port 8080
