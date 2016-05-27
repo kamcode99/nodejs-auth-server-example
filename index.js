@@ -10,9 +10,11 @@ const bodyParser = require('body-parser');
 // Morgan is a logging framework and a middleware
 // Which is basically used for debugging.
 const morgan = require('morgan');
+const router = require('./router');
 
 // Create an express Application
 const app = express();
+router(app);
 
 //**** Application Setup ****
 // Both morgan and bodyParser are middleware in express
